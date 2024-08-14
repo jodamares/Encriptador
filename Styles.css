@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+body {
+    background-color: #F3F5FC;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    color: #0A3871;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    padding: 20px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    max-width: 1200px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    gap: 20px;
+}
+
+section {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 80px;
+}
+
+.inputText, .outputText {
+    width: 100%;
+    height: 300px;
+    padding: 10px;
+    margin-bottom: 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #0A3871;
+    background-color: #F3F5FC;
+    resize: none;
+}
+
+.inputText::placeholder, .outputText::placeholder {
+    color: #0A3871;
+}
+
+.inputText:focus, .outputText:focus {
+    outline: none;
+    border: 2px solid #0A3871;
+}
+
+.outputText {
+    background: url('/asserts/Muñeco.png') no-repeat center;
+    background-size: 150px 150px;
+    background-position: center;
+}
+
+.botones {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.encripButton {
+    background-color: #0A3871;
+    color: white;
+}
+
+.desencripButton {
+    background-color: #D8DFE8;
+    color: #0A3871;
+}
+
+.copyButton {
+    background-color: #0A3871;
+    color: white;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.info {
+    font-size: 14px;
+    color: #495057;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.info img {
+    margin-right: 10px;
+}
